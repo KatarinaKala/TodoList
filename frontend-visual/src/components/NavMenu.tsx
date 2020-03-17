@@ -17,6 +17,9 @@ const NavMenu= () => {
                 <NavItem>
                   <NavLink className="nav-link" to="/"> Home</NavLink>                
               </NavItem>
+              <NavItem>
+                  <NavLink className="nav-link" to="/todo">Todos</NavLink>
+              </NavItem>
               </Nav>
               {/* <NavbarText>Simple Text</NavbarText> */}
             </Collapse>
