@@ -1,21 +1,17 @@
+
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { ToDoListItem } from './ToDoListItem';
+import Home from './components/Home';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css"
+import Layout from './components/Layout';
+import {Route} from 'react-router-dom';
 
-const todos:Array<Todo>=[
-  {text: "Walk the dog", complete:true}, 
-  {text: "Write app", complete:false}
-];
-
-const App: React.FC=() => {
+function App() {
   return (
-    <React.Fragment>
-      <ToDoListItem todo={todos[0]}/>
-      <ToDoListItem todo={todos[1]}/>
-    </React.Fragment>
+    <Layout>
+<Route exact path='/' component={Home}/>
+    </Layout>
   );
-};
-
+}
 export default App;
 

@@ -1,3 +1,24 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.layout__main {
+  height: 100%;
+  width: 100%;
+  padding: 10px 100px 0px 100px;
+}
+
+.navigation {
+  padding: 5px 100px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: black;
+}
 .App {
   text-align: center;
 }
