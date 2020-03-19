@@ -1,4 +1,7 @@
 export type Todo={
-    text:string,
-    complete:boolean;
+    title:string,
+    completed:boolean;
+    id: number;
+    userId: number;
+
   };
